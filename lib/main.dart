@@ -53,7 +53,8 @@ final List<String> buttons = [
 Widget build(BuildContext context) { 
 	return Scaffold( 
 	appBar: new AppBar( 
-		title: new Text("Calculator"), 
+		title: new Text("Nurbibi Koishegul Calculator"), 
+    backgroundColor: Colors.orange[700],
 	), //AppBar 
 	backgroundColor: Colors.white38, 
 	body: Column( 
@@ -167,11 +168,11 @@ Widget build(BuildContext context) {
 						}, 
 						buttonText: buttons[index], 
 						color: isOperator(buttons[index]) 
-							? Colors.blueAccent 
+							? Colors.orange[700] 
 							: Colors.white, 
 						textColor: isOperator(buttons[index]) 
 							? Colors.white 
-							: Colors.black, 
+							: Colors.green, 
 					); 
 					} 
 				}), // GridView.builder 
